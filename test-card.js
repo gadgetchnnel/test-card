@@ -18,7 +18,7 @@ class TestCard extends TestCardHelpers.LitElement {
 
 	loadModules(){
 		try{
-			import("moment.js").then((module) => {
+			import("./moment.js").then((module) => {
 			this.moment = module.default;
 			this.buildIfReady();
 				});
@@ -29,7 +29,7 @@ class TestCard extends TestCardHelpers.LitElement {
 			}
 		
 		try{
-			import("custom-card-helper.js").then((module) => {
+			import("./custom-card-helpers.js").then((module) => {
 			this.helpers = module;
 			this.buildIfReady();
 				});
